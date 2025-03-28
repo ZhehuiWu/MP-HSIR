@@ -11,11 +11,6 @@ Zhehui Wu, [Yong Chen](https://chenyong1993.github.io/yongchen.github.io/), [Nao
 
 <img src="figs/Architecture.png" width="900">
 
- 
-## **Schedule**
-✅ 1：Public pre-trained models and main codes.  
-❌ 2：More complete code, checkpoints for comparison methods, project page, etc. (Coming soon)  
-
 ## **Installation and Data Preparation**
 
 ```
