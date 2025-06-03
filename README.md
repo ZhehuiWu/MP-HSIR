@@ -21,11 +21,11 @@ pip install -r requirements.txt
 
 The download links and basic dataset partitioning instructions are provided in the `data_dir/README.md` file. Below is a more detailed description of the dataset splits and preparation process:
 
--**ICVL Dataset**: The train/test splits are predefined and listed in `data_dir/`.
+- **ICVL Dataset**: The train/test splits are predefined and listed in `data_dir/`.
 
--**ARAD Dataset**: The first 900 samples are used for training, and the last 50 samples are reserved for testing.
+- **ARAD Dataset**: The first 900 samples are used for training, and the last 50 samples are reserved for testing.
 
--**Remote Sensing Hyperspectral Datasets**: The central region of each image is cropped as the test set, while the remaining regions are used for training. The specific cropping rules can be found in `utils/mat_data.py`.
+- **Remote Sensing Hyperspectral Datasets**: The central region of each image is cropped as the test set, while the remaining regions are used for training. The specific cropping rules can be found in `utils/mat_data.py`.
 
 After partitioning, all training data are organized into two LMDB databases—**Natural Scenes and Remote Sensing**—using the script `utils/lmdb_patch.py`.
 
