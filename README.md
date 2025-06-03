@@ -19,8 +19,17 @@ cd MP-HSIR
 pip install -r requirements.txt
 ```
 
-The download paths and partitioning methods for the dataset can be found in the `data_dir/`, and all test datasets are available for download from the [test_dataset](https://drive.google.com/drive/folders/1S-f6mI18bmR7wlsts67lk0-6Oyx5_gIs?usp=drive_link).
+The download links and basic dataset partitioning instructions are provided in the `data_dir/README.md` file. Below is a more detailed description of the dataset splits and preparation process:
 
+***ICVL Dataset**: The train/test splits are predefined and listed in `data_dir/`.
+
+***ARAD Dataset**: The first 900 samples are used for training, and the last 50 samples are reserved for testing.
+
+***Remote Sensing Hyperspectral Datasets**: The central region of each image is cropped as the test set, while the remaining regions are used for training. The specific cropping rules can be found in `utils/mat_data.py`.
+
+After partitioning, all training data are organized into two LMDB databases—**Natural Scenes and Remote Sensing**—using the script `utils/lmdb_patch.py`.
+
+All test datasets are publicly available and can be downloaded from the [test_dataset](https://drive.google.com/drive/folders/1S-f6mI18bmR7wlsts67lk0-6Oyx5_gIs?usp=drive_link) directory.
 
 ## **Models**
 
