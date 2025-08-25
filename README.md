@@ -29,7 +29,7 @@ The download links and basic dataset partitioning instructions are provided in t
 
 After partitioning, all training data are organized into two LMDB databases—**Natural Scenes and Remote Sensing**—using the script `utils/lmdb_patch.py`.
 
-All test datasets are publicly available and can be downloaded from the [test_dataset](https://drive.google.com/drive/folders/1S-f6mI18bmR7wlsts67lk0-6Oyx5_gIs?usp=drive_link) directory.
+All test datasets are publicly available and can be downloaded from the [test_dataset](https://drive.google.com/drive/folders/1EcX6AY63sylH00ixqcD99mAPupDK8KfB?usp=sharing) directory.
 
 ## **Models**
 
