@@ -125,8 +125,8 @@ def create_lmdb_remote_sensing(
         new_data = [] 
 
         height, width = data.shape[-2], data.shape[-1]
-        new_height = (height // 128) * 128
-        new_width = (width // 128) * 128
+        new_height = (height // 64) * 64
+        new_width = (width // 64) * 64
         data = data[..., :new_height, :new_width]
 
         if mask is not None:
@@ -255,7 +255,7 @@ def main():
         destination_folders["Remote_sensing"], fns, destination_folders_patch["Remote_sensing_64"],   # your own dataset address     
         scales=(1, 0.5, 0.25),        
         ksizes=(100, 64, 64),
-        strides=[(100, 64, 64), (100, 32, 32), (100, 32, 32)],      
+        strides=[(100, 32, 32), (100, 16, 16), (100, 16, 16)],      
         load=sio.loadmat, augment=True,
     )
 
